@@ -50,7 +50,8 @@ body {
 #container {
 	width:100%;
 	margin:0 auto;
-	color:#363636;
+	background-color: #fff;
+	/*color:#363636;*/
 }
 
 #ucb {
@@ -66,16 +67,7 @@ body {
 	width:230px;
 	background:none;
 }
-#ucb a.light:link, #ucb a.light:visited, #ucb a.white:link, #ucb a.white:visited {
-	background-image:url(../images/ucb-black.png);	
-}
-#ucb a.dark:link, #ucb a.dark:visited, #ucb a.black:link, #ucb a.black:visited {
-	background-image:url(../images/ucb-white.png);	
-}
-#header {
-	
-	
-}
+
 #banner {
 	
 	height:120px;
@@ -98,17 +90,18 @@ body {
 
 
 .mailingListButton{
-   background: #786a47;
+   background: #d0b87c;
    color: #ccc;
    }
 .mailingListButton:hover {
-   background: #786a47;
+   background: #d0b87c;
    }
 
 #navwrapper {
 	width:100%;
-	background-image:url(../images/navBG.png);
-	background-repeat:repeat-x;
+	/*background-image:url(../images/navBG.png);
+	background-repeat:repeat-x;*/
+	background-color: white;
 	border-top:3px solid #d0b87c;
 }
 
@@ -136,7 +129,7 @@ body {
 }
 #navigation a:link, #navigation a:visited {
 	display:inline-block;
-	color:#d0b87c;
+	color:#000;
 	text-transform:uppercase;
 	padding:0 13px;
 	font-size:15px;
@@ -144,10 +137,10 @@ body {
 	height:45px;
 }
 #navigation a:hover {
-	color:#FFF;	
+	color:#1479d1;	
 }
 #navigation li.current_page_item a:link, #navigation li.current_page_item a:visited, #navigation li.current_page_ancestor a:link, #navigation li.current_page_ancestor a:visited {
-	color:#FFF;
+	color:#1479d1;
 }
 #navigation a#homelink:link, #navigation a#homelink:visited {
 	
@@ -405,37 +398,6 @@ body {
 }
 
 
-.light {
-	background-color:#BEBEBE;	
-	color:#000;
-}
-.light a:link, .light a:visited {
-	color:#000;	
-}
-.light #inputwrapper, .light input.text {
-	background-color:#FFF;	
-}
-.dark {
-	background-color:#5C5C5C;
-	color:#FFF;
-}
-.dark a:link, .dark a:visited {
-	color:#FFF;	
-}
-.dark #inputwrapper, .dark input.text {
-	background-color:#999999;	
-}
-.black {
-	background-color:#333333;
-	color:#FFF;
-}
-.black a:link, .black a:visited {
-	color:#FFF;	
-}
-.black #inputwrapper, .black input.text {
-	background-color:#999999;	
-}
-
 #search label {
     position:absolute;
     top:0;
@@ -654,3 +616,19 @@ a.button:hover, a.button:focus {
 	font-style: italic;
 }
 
+.bold{
+	font-weight: bold;
+}
+
+.float-left{
+	float: left;
+	width: 45%;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.float-right{
+	float: right;
+	width: 45%;
+	margin-bottom: 15px;
+}
