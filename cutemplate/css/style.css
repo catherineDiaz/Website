@@ -22,6 +22,7 @@ h1 a:link, h1 a:visited {
 
 .menu{
 	margin: 0 auto;
+	text-align: center;
 }
 
 img{
@@ -95,6 +96,15 @@ body {
 	background-repeat:no-repeat;
 }
 
+
+.mailingListButton{
+   background: #786a47;
+   color: #ccc;
+   }
+.mailingListButton:hover {
+   background: #786a47;
+   }
+
 #navwrapper {
 	width:100%;
 	background-image:url(../images/navBG.png);
@@ -106,7 +116,8 @@ body {
 	width:960px;
 	margin:0 auto;
 	padding:0;
-	
+	text-align: center;
+	margin: 0 auto;
 	
 }
 #navigation ul {
@@ -114,25 +125,23 @@ body {
 	margin:0;
 	padding:0;
 	height:45px;
-	border-left:1px solid #444;
+	text-align: center;
+	margin: 0 auto;
 }
 #navigation ul li {
 	display:inline;
-	float:left;
 }
 #navigation  ul ul {
 	display:none;	
 }
 #navigation a:link, #navigation a:visited {
-	display:block;
-	float:left;
+	display:inline-block;
 	color:#d0b87c;
 	text-transform:uppercase;
-	padding:0 10px;
+	padding:0 13px;
 	font-size:15px;
 	line-height:45px;
 	height:45px;
-	border-right:1px solid #444;
 }
 #navigation a:hover {
 	color:#FFF;	
@@ -572,7 +581,6 @@ a.button:hover, a.button:focus {
 .orange {
 	background-color:#c7531c;	
 }
-
 
 /* CONTENT BOX */
 
