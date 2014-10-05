@@ -9,18 +9,28 @@
 		</title>
 		
 		<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="css/parallax.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/masterslider.css" />
+		<link href='css/ms-staff-style.css' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+
 		
 	</head>
 	
 	<body>
 	
 	
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
-		<script src="javascript/scripts.js" type="text/javascript"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
 		<script src="javascript/parallax.js" type="text/javascript" charset="utf-8"></script>
-		<script src="javascript/scrollto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="javascript/jquery.easing.min.js"></script>
+		<!--<script src="javascript/jquery-1.10.2.min.js"></script>-->
+		<script src="javascript/masterslider.min.js"></script>
+		
+		<style type="text/css">
+			.ms-staff-carousel .ms-staff-info{
+				min-height: 200px;
+			}
+		</style>
 	
 	<script>
 	$(document).ready( function () {
@@ -57,7 +67,7 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0&amp;wmode=transparent";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 		<a name="top">
@@ -108,27 +118,27 @@
 					<div class="menu">
 						<ul>
 							<li>
-								<a href="#banner" title="Home">
+								<a href="index.html#banner" title="Home">
 									Home</a>
 							</li>
 							<li>
-								<a href="#" title="Home">
+								<a href="events.html" title="Home">
 									Events</a>
 							</li>
 							<li>
-								<a href="#section2" title="Home">
+								<a href="index.html#section2" title="Home">
 									About</a>
 							</li>
 							<li>
-								<a href="#section3" title="Home">
+								<a href="index.html#section3" title="Home">
 									Officers</a>
 							</li>
 							<li>
-								<a href="#" title="Home">
+								<a href="scholarships.html" title="Home">
 									Scholarships</a>
 							</li>
 							<li>
-								<a href="#section4" title="Home" class="mailingListButton">
+								<a href="index.html#section4" title="Home" class="mailingListButton">
 									Sign Up</a>
 							</li>
 						</ul>
@@ -150,7 +160,7 @@
 			<div class="title grid-full">
 				<h2>EVENTS</h2>
 			<div class="float-left">
-				<iframe src="http://www.google.com/calendar/embed?src=colorado.edu_fpvl2nes71ol6lo82jrd7uhn9o%40group.calendar.google.com&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;ctz=America%2FDenver" style="border: 0" width="600" height="400" frameborder="0" scrolling="no"></iframe><br />
+				<iframe src="http://www.google.com/calendar/embed?src=colorado.edu_fpvl2nes71ol6lo82jrd7uhn9o%40group.calendar.google.com&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;ctz=America%2FDenver&amp;wmode=transparent" style="border: 0" width="600" height="400" frameborder="0" scrolling="no"></iframe><br />
 			</div>
 			
 <div class="fb-like-box" data-href="https://www.facebook.com/CUWomenInComputing" data-width="600" data-height="400" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>			
@@ -161,15 +171,24 @@
 		<div class="content dark padded container">
 			<div class="title grid-full">
 				<h2>ABOUT</h2>
-					<p>
-					<span class="bold">CU Women in Computing (CUWIC)</span> is the <span class="bold">ACM-W</span> chapter within the Computer 
-					Science Department at the University of Colorado at Boulder that is 
-					dedicated to supporting women and diversity in computing. We encourage
-					 interaction from all who are interested in issues regarding women and
-					  diversity in computing to create a forum in which to share information
-					   about career, academic, and social opportunities. We are mainly
-					    funded by the department of Computer Science. 
-					</p>
+					<div id="about-div">
+						<div class="float-left image-padding">
+							<img src="images/homepage/about-img.jpg">
+						</div>
+						<div class="left-align-text float-left">
+						<p>
+						<span class="bold">CU Women in Computing (CUWIC)</span> is the <span class="bold">ACM-W</span> chapter within the Computer 
+						Science Department at the University of Colorado at Boulder that is 
+						dedicated to supporting women and diversity in computing.
+						<p>We encourage
+							interaction from all who are interested in issues regarding women and
+							diversity in computing to create a forum in which to share information
+						   about career, academic, and social opportunities.</p>
+						<p>We are mainly
+							funded by the department of Computer Science. 
+						</p>
+						</div>
+					</div>
 
 			</div>
 
@@ -181,15 +200,100 @@
 	<div class="content container padded">
 			<div class="title grid-full">
 				<h2>OFFICERS</h2>
-					<p>
-			Viral Shoreditch Truffaut cray yr, semiotics hella flexitarian PBR&B Portland. Fashion axe Austin butcher normcore flannel, 8-bit Kickstarter swag put a bird on it Truffaut DIY Thundercats. Flannel biodiesel pickled cred, before they sold out put a bird on it ugh cardigan irony normcore gastropub pork belly synth kitsch. Godard next level occupy, keffiyeh cliche disrupt Odd Future. Hoodie plaid biodiesel before they sold out, aesthetic stumptown skateboard semiotics small batch crucifix Blue Bottle umami McSweeney's disrupt tote bag. Plaid street art viral artisan Williamsburg, bespoke 8-bit kale chips direct trade letterpress whatever High Life. Flexitarian locavore post-ironic beard cornhole, blog Vice pug vinyl tousled you probably haven't heard of them synth banjo selvage lomo.
-
-Yr sriracha Kickstarter slow-carb Banksy roof party. Locavore swag XOXO, biodiesel Blue Bottle tote bag hella. Tonx sustainable sartorial, wayfarers cray selvage put a bird on it food truck Pinterest Etsy meh raw denim. Occupy Schlitz ennui, normcore leggings salvia disrupt tattooed authentic roof party McSweeney's. Flannel hella tousled, YOLO irony VHS organic. Jean shorts craft beer banh mi Vice Kickstarter fanny pack. Typewriter selfies selvage, farm-to-table craft beer cliche Thundercats vegan tofu Schlitz.
-
-Direct trade bitters seitan, Pinterest sustainable Godard hashtag XOXO Truffaut before they sold out Austin vinyl. Craft beer post-ironic viral pop-up, jean shorts hella twee blog Etsy sustainable keytar. Whatever crucifix beard, messenger bag 8-bit Godard stumptown organic literally synth heirloom typewriter raw denim. Tumblr YOLO meggings slow-carb, bitters squid Carles meh. Intelligentsia ethical wolf farm-to-table organic Williamsburg, swag synth literally. Before they sold out roof party crucifix, readymade typewriter artisan sartorial kitsch. Neutra forage stumptown deep v pork belly, narwhal butcher Bushwick Truffaut salvia plaid Marfa viral.
-
-Crucifix kitsch quinoa try-hard paleo Tonx, ethical vinyl. Tumblr narwhal yr twee, paleo Intelligentsia Truffaut. Pour-over umami Thundercats, forage wolf ethical Wes Anderson cray YOLO. XOXO food truck Neutra hashtag. PBR&B actually photo booth, pop-up twee retro hella Echo Park dreamcatcher Helvetica Tonx drinking vinegar Vice Tumblr food truck. Retro banh mi Williamsburg tattooed literally, Blue Bottle mustache. Tumblr Carles DIY keytar, hella art party pour-over Cosby sweater vinyl.
-					</p>
+				<div class="ms-staff-carousel">
+			<!-- masterslider -->
+			<div class="master-slider" id="masterslider">
+			    <div class="ms-slide">
+			        <img src="images/officers/blank.gif" data-src="images/officers/heather.jpg" alt="lorem ipsum dolor sit"/>  
+			        <div class="ms-info">
+			        	<h3>HEATHER DYKSTRA</h3>
+			        	<h4>CHAIR</h4>
+			        	<p class="email">E-Mail: <a href="#">heather.dykstra@colorado.edu</a></p>
+			        	<p>Heather is an undergraduate at CU Boulder, getting a BS in Computer Science, with a focus in Software Engineering. She will be graduating Spring 2015 and is excited to have a wonderful last year at CU. She has been working as the Chair of CUWIC since Fall 2013, and looks forward to working with everyone this year. </p>
+			    
+			        </div>     
+			    </div>
+			    <div class="ms-slide">
+			        <img src="images/officers/blank.gif" data-src="images/officers/annie.jpg" alt="lorem ipsum dolor sit"/>     
+			          <div class="ms-info">
+			        	<h3>ANNIE KELLY</h3>
+			        	<h4>SECRETARY</h4>
+			        	<p class="email">E-Mail: <a href="#">annie.kelly@colorado.edu</a></p>
+			        	<p>Annie is an undergraduate working towards a BS in Computer Science on the Software Engineering track.  She is new to CUWIC this year, but is extremely excited to work with the group this year. </p>
+			        </div>     
+			    </div>
+			    <div class="ms-slide">
+			        <img src="images/officers/blank.gif" data-src="images/officers/officer1.jpg" alt="lorem ipsum dolor sit"/>
+			          <div class="ms-info">
+			        	<h3>LAUREN</h3>
+			        	<h4>HUMAN</h4>
+			        	<p class="email">E-Mail: <a href="#">fredpenner@dayrep.com</a></p>
+			        	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+			        </div>             
+			    </div>
+			    <div class="ms-slide">
+			        <img src="images/officers/blank.gif" data-src="images/officers/4.jpg" alt="lorem ipsum dolor sit"/>
+			         <div class="ms-info">
+			        	<h3>KELLY KAOUDIS</h3>
+			        	<h4>TREASURER</h4>
+			        	<p class="email">E-Mail: <a href="#">kelly.kaoudis@colorado.edu</a></p>
+			        	<p>Kelly is a second-year master’s student graduating in 2015 with a focus in systems. This will be her second year on the CU WIC committee. She’s passionate about making things that are useful and scalable, and helping others get involved in computing. When not in the lab, she’s bouldering in the canyons west of town or doing yoga.</p>
+			        </div>            
+			    </div>
+			    <div class="ms-slide">
+			        <img src="images/officers/blank.gif" data-src="images/officers/5.jpg" alt="lorem ipsum dolor sit"/>
+			         <div class="ms-info">
+			        	<h3>BROOKE ROBINSON</h3>
+			        	<h4>UNDERGRADUATE MEMBERSHIP LEADER</h4>
+			        	<p class="email">E-Mail: <a href="#">brooke.robinson@colorado.edu</a></p>
+			        	<p>Brooke is a sophomore undergraduate BS Computer Science student focusing on Human Centered Computing. She is currently a Learning Assistant for the Computer Science department and is also in Army ROTC. This is her first year on the committee for WIC but is planning on setting up mentorship opportunities and getting people excited about diversity for computer disciplines. </p>
+			        
+			        </div>              
+			    </div>
+			    <div class="ms-slide">
+			        <img src="images/officers/blank.gif" data-src="images/officers/6.jpg" alt="lorem ipsum dolor sit"/>
+			         <div class="ms-info">
+			        	<h3>JANE LOPEZ</h3>
+			        	<h4>COMPANY CEO</h4>
+			        	<p class="email">E-Mail: <a href="#">janeplopez@rhyta.com</a></p>
+			        	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+			        
+			        </div>           
+			    </div>
+			    <div class="ms-slide">
+			        <img src="images/officers/blank.gif" data-src="images/officers/7.jpg" alt="lorem ipsum dolor sit"/>  
+			         <div class="ms-info">
+			        	<h3>JAMES RIDGWAY</h3>
+			        	<h4>IT MANAGER</h4>
+			        	<p class="email">E-Mail: <a href="#">jameslridgway@rhyta.com</a></p>
+			        	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+			        	
+			        </div>     
+			    </div>
+			     <div class="ms-slide">
+			        <img src="images/officers/blank.gif" data-src="images/officers/8.jpg" alt="lorem ipsum dolor sit"/>  
+			         <div class="ms-info">
+			        	<h3>PATRICIA BURNS</h3>
+			        	<h4>SYSTEM ADMIN</h4>
+			        	<p class="email">E-Mail: <a href="#">patriciaburns@dayrep.com</a></p>
+			        	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+			        	
+			        </div>     
+			    </div>
+			    <div class="ms-slide">
+			        <img src="images/officers/blank.gif" data-src="images/officers/9.jpg" alt="lorem ipsum dolor sit"/>  
+			         <div class="ms-info">
+			        	<h3>TERRY THOMPSON</h3>
+			        	<h4>REVIEWER</h4>
+			        	<p class="email">E-Mail: <a href="#">terrythompson@teleworm.us</a></p>
+			        	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+			        	
+			        </div>     
+			    </div>
+			</div>
+			<!-- end of masterslider -->
+			<div class="ms-staff-info" id="staff-info"> </div>
+		</div>
 			
 			
 			</div>
@@ -200,18 +304,16 @@ Crucifix kitsch quinoa try-hard paleo Tonx, ethical vinyl. Tumblr narwhal yr twe
 		<div class="content dark padded container">
 			<div class="title grid-full">
 				<h2>SIGN UP</h2>
-				<h3>Receive Updated schmph schmrph scrpmhph</h3>
+				<h3>Receive updates on our future events and meetings!</h3>
 			
 			<div>
 				
 				
 				<form action="MAILTO:listproc@lists.Colorado.EDU" method="post" enctype="text/plain">
-				Name:<br>
-				<input type="text" name="name" value="your name" size="50"><br>
 				E-mail:<br>
-				<input type="text" name="mail" value="your email" size="50"><br>
+				<input type="text" name="mail" size="50"><br>
 				Comment:<br>
-				<input type="text" name="message" value="subscribe cuwic YOUR NAME HERE" size="50"><br><br>
+				<input type="text" name="message" value="subscribe cuwic FIRSTNAME LASTNAME" size="50"><br><br>
 				<input type="submit" value="Sign Up">
 				<input type="reset" value="Reset">
 				</form>
@@ -228,6 +330,13 @@ Crucifix kitsch quinoa try-hard paleo Tonx, ethical vinyl. Tumblr narwhal yr twe
 			</div>
 		</div>
 		<div id="footer-wrapper">
+			<div id="sponsors">
+				<ul id="sponsors-list">
+					<li><img src="images/sponsors/acmw-logo.png"></li>
+					<li><img src="images/sponsors/cs_dept_logo.png"></li>
+					<li><img src="images/sponsors/Zayo-Only-on-Gray.png"></li>
+				</ul>
+			</div>
 			<div id="footer">
 				<div id="site-footer">
 					<a href="SITE URL">
@@ -265,4 +374,21 @@ Crucifix kitsch quinoa try-hard paleo Tonx, ethical vinyl. Tumblr narwhal yr twe
 			</div>
 		</div>
 	</body>
+	
+	<script type="text/javascript">		
+		var slider = new MasterSlider();
+		slider.setup('masterslider' , {
+			loop:true,
+			width:240,
+			height:240,
+			speed:20,
+			view:'focus',
+			preload:'all',
+			space:0,
+			wheel:true
+		});
+		slider.control('arrows');
+		slider.control('slideinfo',{insertTo:'#staff-info'});
+
+	</script>
 </html>

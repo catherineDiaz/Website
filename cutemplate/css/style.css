@@ -3,6 +3,8 @@ Theme Name: CU Template 1
 Version: 1.0
 
 */
+
+
 #header {
 	background-color:#fff;}
 h1 a:link, h1 a:visited { 
@@ -47,6 +49,14 @@ body {
 	margin:0;
 	padding:0;
 }
+body a:hover{
+	color: #cfb87b;
+}
+
+.dark a:hover{
+	color: white;
+}
+
 #container {
 	width:100%;
 	margin:0 auto;
@@ -103,6 +113,7 @@ body {
 	background-repeat:repeat-x;*/
 	background-color: white;
 	border-top:3px solid #d0b87c;
+	z-index: 100;
 }
 
 #navigation {
@@ -352,6 +363,13 @@ body {
 }
 #footer a:link, #footer a:visited {
 	color:#d0b87c;	
+}
+
+::selection {
+  background: #a2cbfb; !important/* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #a2cbfb; !important/* Gecko Browsers */
 }
 
 
@@ -631,4 +649,54 @@ a.button:hover, a.button:focus {
 	float: right;
 	width: 45%;
 	margin-bottom: 15px;
+}
+
+/* SPONSORS */
+#sponsors{
+	text-align: center;
+}
+
+#sponsors-list li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+/*EVENTS*/
+.new-event{
+	width: 75%;
+	text-align: left;
+	border-bottom: 3px solid #333;
+	margin: 0 auto;
+}
+
+/*ABOUT*/
+
+#about-div{
+	width: 70%;
+	margin: 0 auto;
+	padding-bottom: 250px;
+}
+
+.left-align-text{
+	text-align: left;
+}
+
+.image-padding{
+	padding-bottom: 20px;
+}
+
+/*SCHOLARSHIPS*/
+.list-of-links{
+	width: 70%;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.list-of-links ul{
+	list-style-type: circle;
+}
+
+.list-of-links li{
+	padding: 10px;
 }
