@@ -9,9 +9,11 @@
 		</title>
 		
 		<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="css/masterslider.css" />
-		<link href='css/ms-staff-style.css' rel='stylesheet' type='text/css'>
+		<!--<link rel="stylesheet" href="css/masterslider.css" />-->
+		
+		<!--<link href='css/ms-staff-style.css' rel='stylesheet' type='text/css'>-->
 		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+		 <link rel="stylesheet" href="css/dgstyle.css" />
 
 		
 	</head>
@@ -21,26 +23,14 @@
 	
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
 		<script src="javascript/jquery.easing.min.js"></script>
-		<script src="javascript/masterslider.min.js"></script>
+		<script src="javascript/modernizr.custom.53451.js"></script>
+		<!--<script src="javascript/masterslider.min.js"></script>-->
 
 		<!-- Script for Sticky Header-->
 		<script>
 		$(document).ready( function () {
 		
-		
-		
-		
-		
-				var sections = $('section')
-		  , nav = $('nav')
-		  , nav_height = nav.outerHeight();
-		  
-		  
-		  
-		  
-		  
-		
-			// Check the initial Poistion of the Sticky Header
+			// Check the initial Position of the Sticky Header
 			var stickyHeaderTop = $('#navwrapper').offset().top;
 			
 			
@@ -87,8 +77,7 @@
 		</script>
 		<!--End Facebook Plugin (Extra Scripts)-->
 	
-		<a name="top">
-		</a>
+	
 		<div id="container">
 			<div id="header">
 				<div id="banner">
@@ -217,91 +206,60 @@
 			<!--End About Section -->
 	
 			<!--Begin Officers Section-->
-			<section id="section3" class="padded">
-				<h2 class="title">OFFICERS</h2>
-				<div class="ms-staff-carousel">
-					<!-- masterslider -->
-					<div class="master-slider" id="masterslider">
 			
-						<div class="ms-slide">
-							<img src="images/officers/blank.gif" data-src="images/officers/heather.jpg" alt="lorem ipsum dolor sit"/>  
-							<div class="ms-info">
+			<section id="section3" class="padded">
+			<h2 class="title">OFFICERS</h2>
+				<section id="dg-container" class="dg-container">
+					<div class="dg-wrapper">
+						<span><img src="images/officers/heather.jpg" alt="image01">
+							<div class="staff-info">
 								<h3>HEATHER DYKSTRA</h3>
 								<h4>CHAIR</h4>
 								<p class="email">E-Mail: <a href="#">heather.dykstra@colorado.edu</a></p>
-								<p>Heather is an undergraduate at CU Boulder, getting a BS in Computer Science, with a focus in Software Engineering. She will be graduating Spring 2015 and is excited to have a wonderful last year at CU. She has been working as the Chair of CUWIC since Fall 2013, and looks forward to working with everyone this year. </p>
-		
-							</div>     
-						</div>
-				
-						<div class="ms-slide">
-							<img src="images/officers/blank.gif" data-src="images/officers/annie.jpg" alt="lorem ipsum dolor sit"/>     
-							  <div class="ms-info">
+								<p class="staff-description">Heather is an undergraduate at CU Boulder, getting a BS in Computer Science, with a focus in Software Engineering. She will be graduating Spring 2015 and is excited to have a wonderful last year at CU. She has been working as the Chair of CUWIC since Fall 2013, and looks forward to working with everyone this year. </p>
+	
+							</div> 
+						</span>
+						<span><img src="images/officers/annie.jpg" alt="image02">
+							<div class="staff-info">
 								<h3>ANNIE KELLY</h3>
 								<h4>SECRETARY</h4>
 								<p class="email">E-Mail: <a href="#">annie.kelly@colorado.edu</a></p>
-								<p>Annie is an undergraduate working towards a BS in Computer Science on the Software Engineering track.  She is new to CUWIC this year, but is extremely excited to work with the group this year. </p>
-							</div>     
-						</div>
-				
-						<div class="ms-slide">
-							<img src="images/officers/blank.gif" data-src="images/officers/officer1.jpg" alt="lorem ipsum dolor sit"/>
-							  <div class="ms-info">
+								<p class="staff-description">Annie is an undergraduate working towards a BS in Computer Science on the Software Engineering track.  She is new to CUWIC this year, but is extremely excited to work with the group this year. </p>
+							</div>  
+						</span>
+						<span><img src="images/officers/lauren.jpg" alt="image02">
+							<div class="staff-info">
 								<h3>LAUREN</h3>
 								<h4>HUMAN</h4>
 								<p class="email">E-Mail: <a href="#">fredpenner@dayrep.com</a></p>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-							</div>             
-						</div>
-				
-						<div class="ms-slide">
-							<img src="images/officers/blank.gif" data-src="images/officers/4.jpg" alt="lorem ipsum dolor sit"/>
-							 <div class="ms-info">
-								<h3>KELLY KAOUDIS</h3>
-								<h4>TREASURER</h4>
-								<p class="email">E-Mail: <a href="#">kelly.kaoudis@colorado.edu</a></p>
-								<p>Kelly is a second-year master’s student graduating in 2015 with a focus in systems. This will be her second year on the CU WIC committee. She’s passionate about making things that are useful and scalable, and helping others get involved in computing. When not in the lab, she’s bouldering in the canyons west of town or doing yoga.</p>
-							</div>            
-						</div>
-				
-						<div class="ms-slide">
-							<img src="images/officers/blank.gif" data-src="images/officers/brooke.jpg" alt="lorem ipsum dolor sit"/>
-							 <div class="ms-info">
+								<p class="staff-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+							</div>  
+						</span>
+						<span><img src="images/officers/brooke.jpg" alt="image02">
+						<div class="staff-info">
 								<h3>BROOKE ROBINSON</h3>
 								<h4>UNDERGRADUATE MEMBERSHIP LEADER</h4>
 								<p class="email">E-Mail: <a href="#">brooke.robinson@colorado.edu</a></p>
-								<p>Brooke is a sophomore undergraduate BS Computer Science student focusing on Human Centered Computing. She is currently a Learning Assistant for the Computer Science department and is also in Army ROTC. This is her first year on the committee for WIC but is planning on setting up mentorship opportunities and getting people excited about diversity for computer disciplines. </p>
-			
-							</div>              
-						</div>
-				
-						<div class="ms-slide">
-							<img src="images/officers/blank.gif" data-src="images/officers/6.jpg" alt="lorem ipsum dolor sit"/>
-							 <div class="ms-info">
-								<h3>NICOLE BRECKAGE</h3>
-								<h4>GRADUATE MEMBERSHIP LEADER</h4>
-								<p class="email">E-Mail: <a href="#">email</a></p>
-								<p>Nicole is a 3rd-year PhD student focusing on modeling language development and acquisition with machine learning and network science tools. She has been active in WIC at CU as well as at Indiana University. She hopes to graduate Spring of 2016.</p>
-			
-							</div>           
-						</div>
-				
-						<div class="ms-slide">
-							<img src="images/officers/blank.gif" data-src="images/officers/officer2.jpg" alt="lorem ipsum dolor sit"/>  
-							 <div class="ms-info">
-								<h3>ALEX GENDREAU</h3>
-								<h4>TITLE</h4>
-								<p class="email">E-Mail: <a href="#">alex.gendreau24@gmail.com</a></p>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-				
-							</div>     
-						</div>
-		
+								<p class="staff-description">Brooke is a sophomore undergraduate BS Computer Science student focusing on Human Centered Computing. She is currently a Learning Assistant for the Computer Science department and is also in Army ROTC. This is her first year on the committee for WIC but is planning on setting up mentorship opportunities and getting people excited about diversity for computer disciplines. </p>
+						</div> 
+						</span>
+						<span><img src="images/officers/officer2.jpg" alt="image02">
+						<div class="staff-info">
+									<h3>FILLER</h3>
+									<h4>ROLE</h4>
+									<p class="email">E-Mail: <a href="#">EMAIL</a></p>
+									<p class="staff-description">DESCRIPTION</p>
+								</div>  
+						</span>
 					</div>
-			
-					<!-- end of masterslider -->
-				<div class="ms-staff-info" id="staff-info"> </div>
+					<nav>	
+						<span class="dg-prev">&lt;</span>
+						<span class="dg-next">&gt;</span>
+					</nav>
+				</section>
 			</section>
+			
 			<!--End Officers Section-->
 	
 			<!--Begin Sign Up Section -->
@@ -372,10 +330,20 @@
 				</div>
 			</div>
 		</div>
+		
+		
+		<script type="text/javascript" src="javascript/jquery.gallery.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#dg-container').gallery();
+			});
+		</script>
+		
 	</body>
 	
 	<!-- Script necessary for Master Slider-->
 	<script type="text/javascript">		
+	/*
 		var slider = new MasterSlider();
 		slider.setup('masterslider' , {
 			loop:true,
@@ -389,6 +357,6 @@
 		});
 		slider.control('arrows');
 		slider.control('slideinfo',{insertTo:'#staff-info'});
-
+*/
 	</script>
 </html>

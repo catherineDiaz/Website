@@ -726,3 +726,15 @@ a.button:hover, a.button:focus {
 .list-of-links li{
 	padding: 10px;
 }
+
+/*****/
+.staff-info{
+	text-align: center;
+	color: #000;
+	width: 100%;
+	display: none;
+	position: absolute;
+}
+.staff-decription{
+	width: 200%;
+}
