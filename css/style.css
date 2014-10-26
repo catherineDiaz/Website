@@ -14,12 +14,34 @@ h1 a:link, h1 a:visited {
 	background-image:url(../images/colors/gold.jpg);
 }
 
-#main-image{
-	width: 100%;
+.padded{
+	padding: 6%;
 }
 
-#main-image img{
+.title { 
+	text-align: center;
+}
+
+.colored { 
+	background-color: #cfb87b;
+}
+
+
+#main-image{
 	width: 100%;
+	height: 400px;
+	background: url(/images/engineering-center2.jpg); 
+	background-position: 50% 50%;
+	background-size: cover;
+
+}
+
+.block-iframe{
+	position: relative;
+	margin: 0 0 50px 50px;
+	display: inline-block;
+	width: 600px;
+	height: 400px;
 }
 
 .menu{
