@@ -127,13 +127,15 @@ body a:hover{
 }
 
 
-.mailingListButton{
+#mailingListButton{
    background: #d0b87c;
    color: #ccc;
-   }
-.mailingListButton:hover {
+   -moz-border-radius: 15px;
+	border-radius: 15px;
+}
+#mailingListButton:hover {
    background: #d0b87c;
-   }
+}
 
 #navwrapper {
 	width:100%;
@@ -141,6 +143,7 @@ body a:hover{
 	background-repeat:repeat-x;*/
 	background-color: white;
 	border-top:3px solid #d0b87c;
+	border-bottom:1px solid #d0b87c;
 	z-index: 100;
 }
 
@@ -167,7 +170,7 @@ body a:hover{
 	display:none;	
 }
 #navigation a:link, #navigation a:visited {
-	display:inline-block;
+	/*display:inline-block;*/
 	color:#000;
 	text-transform:uppercase;
 	padding:0 13px;
@@ -181,12 +184,7 @@ body a:hover{
 #navigation li.current_page_item a:link, #navigation li.current_page_item a:visited, #navigation li.current_page_ancestor a:link, #navigation li.current_page_ancestor a:visited {
 	color:#1479d1;
 }
-#navigation a#homelink:link, #navigation a#homelink:visited {
-	
-}
-#navigation li#current a#homelink:link, #navigation li#current a#homelink:visited {
 
-}
 #pagewrapper {
 	width:100%;
 	background-color:#fff;

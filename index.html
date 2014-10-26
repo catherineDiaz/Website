@@ -26,11 +26,26 @@
 		<!-- Script for Sticky Header-->
 		<script>
 		$(document).ready( function () {
+		
+		
+		
+		
+		
+				var sections = $('section')
+		  , nav = $('nav')
+		  , nav_height = nav.outerHeight();
+		  
+		  
+		  
+		  
+		  
+		
 			// Check the initial Poistion of the Sticky Header
-
 			var stickyHeaderTop = $('#navwrapper').offset().top;
-
+			
+			
 			$(window).scroll(function(){
+			
 					if( $(window).scrollTop() > stickyHeaderTop ) {
 							$('#navwrapper').css({position: 'fixed', top: '0px'});
 							$('#stickyalias').css('display', 'block');
@@ -38,7 +53,10 @@
 							$('#navwrapper').css({position: 'static', top: '0px'});
 							$('#stickyalias').css('display', 'none');
 					}
+
+					
 			});
+			
 		
 			  $('a[href*=#]:not([href=#])').click(function() {
 					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -137,7 +155,7 @@
 									Scholarships</a>
 							</li>
 							<li>
-								<a href="index.html#section4" title="Home" class="mailingListButton">
+								<a href="index.html#section4" title="Home" id="mailingListButton">
 									Sign Up</a>
 							</li>
 						</ul>
@@ -177,7 +195,7 @@
 			<!--Begin About Section-->
 			<section id="section2" class="colored padded">
 				<h2 class="title">ABOUT</h2>
-				<div id="about-div">
+				<div id="about-div" class="center">
 					<div class="image-padding">
 						<img src="images/homepage/wic-img.jpg">
 					</div>
@@ -302,6 +320,7 @@
 
 			</section>
 			<!-- End Sign Up Section-->
+			
 			
 			
 		<!--Begin Footer-->
