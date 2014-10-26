@@ -9,7 +9,6 @@
 		</title>
 		
 		<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="css/parallax.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="css/masterslider.css" />
 		<link href='css/ms-staff-style.css' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
@@ -21,55 +20,43 @@
 	
 	
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
-		<script src="javascript/parallax.js" type="text/javascript" charset="utf-8"></script>
 		<script src="javascript/jquery.easing.min.js"></script>
-		<!--<script src="javascript/jquery-1.10.2.min.js"></script>-->
 		<script src="javascript/masterslider.min.js"></script>
+
+		<!-- Script for Sticky Header-->
+		<script>
+		$(document).ready( function () {
+			// Check the initial Poistion of the Sticky Header
+
+			var stickyHeaderTop = $('#navwrapper').offset().top;
+
+			$(window).scroll(function(){
+					if( $(window).scrollTop() > stickyHeaderTop ) {
+							$('#navwrapper').css({position: 'fixed', top: '0px'});
+							$('#stickyalias').css('display', 'block');
+					} else {
+							$('#navwrapper').css({position: 'static', top: '0px'});
+							$('#stickyalias').css('display', 'none');
+					}
+			});
 		
-		<style type="text/css">
-			.ms-staff-carousel .ms-staff-info{
-				min-height: 200px;
-			}
-		</style>
+			  $('a[href*=#]:not([href=#])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					  var target = $(this.hash);
+					  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					  if (target.length) {
+						$('html,body').animate({
+						  scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					  }
+					}
+				  });
+			  });
+		</script>
+		<!--End Script for Sticky Header-->
+
 	
-	<script>
-	$(document).ready( function () {
-        // Check the initial Poistion of the Sticky Header
-
-        var stickyHeaderTop = $('#navwrapper').offset().top;
-
-        $(window).scroll(function(){
-                if( $(window).scrollTop() > stickyHeaderTop ) {
-                        $('#navwrapper').css({position: 'fixed', top: '0px'});
-                        $('#stickyalias').css('display', 'block');
-                } else {
-                        $('#navwrapper').css({position: 'static', top: '0px'});
-                        $('#stickyalias').css('display', 'none');
-                }
-        });
-        
-          $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-  });
-	</script>
-	<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0&amp;wmode=transparent";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 		<a name="top">
 		</a>
 		<div id="container">
@@ -145,76 +132,62 @@
 					</div>
 				</div>
 			</div>
+			
+			<!--Required to make sticky navigation -->
 			<div id="stickyalias"></div>
 			
-			
+			<!--Gold banner strip beneath the links -->
 			<div id="subpage-color" class="featurecolor">
 			</div>
 			
+			<!--Banner image section -->
 			<section id="main-image">
-			<img src="images/ecenter-back-pan.jpg">
 			</section>
 			
 			
 			
-			
-			
-		<section id="section1" class="portfolio clearfix">
-			<div class="content padded container">
-			<div class="title grid-full">
-				<h2>SCHOLARSHIPS</h2>
-					<div class="list-of-links">
-						<ul>
-							<li><a href="http://www.google.com/anitaborg/">Google Anita Borg Memorial Scholarship</a></li>
-							<li><a href="http://gracehopper.org/">Grace Hopper Student Scholarships</a></li>
-							<li><a href="http://research.microsoft.com/en-us/collaboration/awards/fellows-women.aspx">Microsoft Research Graduate Women's Scholarship Program</a></li>
-							<li><a href="http://www.zonta.org/WhatWeDo/InternationalPrograms/AmeliaEarhartFellowship.aspx">Zonta International Amelia Earhart Fellowship</a></li>
-							<li><a href="http://www.google.com/edu/programs/google-rise-awards/">Google RISE (Roots in Science and Engineering) Awards</a></li>
-							<li><a href="http://women.acm.org/scholarship">ACM-W Research Conference Scholarship</a><br />
-							 - Apply 2 months prior to the research conference that you want to attend</li>
-							<li><a href="http://cms.comsoc.org/eprise/main/SiteGen/n2women/Content/Home/Fellowships.html">N2&nbsp;Women Student Fellowships</a><br />
-							 - Available year round</li>
-							<li><a href="http://cra-w.org/ArticleDetails/tabid/77/ArticleID/55/Default.aspx">CRA-W Grad Cohort</a></li>
-							<li><a href="https://parasol.tamu.edu/dreu/">CRA-W Distributed Research Experiences for Undergraduates (DREU)</a></li>
-							<li><a href="http://cra-w.org/ArticleDetails/tabid/77/ArticleID/51/Default.aspx">CRA-W Collaborative Research Experience for Undergraduates (CREU)</a></li>
-							<li><a href="http://tapiaconference.org/">Scholarship to attend Richard Tapia Celebration of Diversity in Computing</a></li>
-						</ul>
-					</div>
-			</div>
-			</div>
+		<section id="section1" class="padded">
+			<h2 class="title">SCHOLARSHIPS</h2>
+				<div class="list-of-links">
+					<ul>
+						<li><a href="http://www.google.com/anitaborg/">Google Anita Borg Memorial Scholarship</a></li>
+						<li><a href="http://gracehopper.org/">Grace Hopper Student Scholarships</a></li>
+						<li><a href="http://research.microsoft.com/en-us/collaboration/awards/fellows-women.aspx">Microsoft Research Graduate Women's Scholarship Program</a></li>
+						<li><a href="http://www.zonta.org/WhatWeDo/InternationalPrograms/AmeliaEarhartFellowship.aspx">Zonta International Amelia Earhart Fellowship</a></li>
+						<li><a href="http://www.google.com/edu/programs/google-rise-awards/">Google RISE (Roots in Science and Engineering) Awards</a></li>
+						<li><a href="http://women.acm.org/scholarship">ACM-W Research Conference Scholarship</a><br />
+						 - Apply 2 months prior to the research conference that you want to attend</li>
+						<li><a href="http://cms.comsoc.org/eprise/main/SiteGen/n2women/Content/Home/Fellowships.html">N2&nbsp;Women Student Fellowships</a><br />
+						 - Available year round</li>
+						<li><a href="http://cra-w.org/ArticleDetails/tabid/77/ArticleID/55/Default.aspx">CRA-W Grad Cohort</a></li>
+						<li><a href="https://parasol.tamu.edu/dreu/">CRA-W Distributed Research Experiences for Undergraduates (DREU)</a></li>
+						<li><a href="http://cra-w.org/ArticleDetails/tabid/77/ArticleID/51/Default.aspx">CRA-W Collaborative Research Experience for Undergraduates (CREU)</a></li>
+						<li><a href="http://tapiaconference.org/">Scholarship to attend Richard Tapia Celebration of Diversity in Computing</a></li>
+					</ul>
+				</div>
 		</section>
 		
-		<section id="section2" class="parallax colored clearfix">
-			<div class="content dark padded container">
-			<div class="title grid-full">
-				<h2>CONFERENCES</h2>
-					<div class="new-event">
-						<h2><a href="google.com">Qualcomm</a></h2>
-						<p><span class="bold">Time:</span> Thursday, October 9th, 2014: 10:00am-12:00pm</p>
-						<p><span class="bold">Location:</span> ECOT 831</p>
-						<p>I am a description! I don't exist for this upcoming event FOR SOME REASON AIUSDHASDJHKASD.</p>
-					</div>
-					<div class="new-event">
-						<h2>Qualcomm</h2>
-						<p><span class="bold">Time:</span> Thursday, October 9th, 2014: 10:00am-12:00pm</p>
-						<p><span class="bold">Location:</span> ECOT 831</p>
-						<p>I am a description! I don't exist for this upcoming event FOR SOME REASON AIUSDHASDJHKASD.</p>
-					</div>
-			</div>
-			</div>
+		<section id="section2" class="colored padded">
+			<h2 class="title">CONFERENCES</h2>
+				<div class="new-event">
+					<h2><a href="google.com">Qualcomm</a></h2>
+					<p><span class="bold">Time:</span> Thursday, October 9th, 2014: 10:00am-12:00pm</p>
+					<p><span class="bold">Location:</span> ECOT 831</p>
+					<p>I am a description! I don't exist for this upcoming event FOR SOME REASON AIUSDHASDJHKASD.</p>
+				</div>
+				<div class="new-event">
+					<h2>Qualcomm</h2>
+					<p><span class="bold">Time:</span> Thursday, October 9th, 2014: 10:00am-12:00pm</p>
+					<p><span class="bold">Location:</span> ECOT 831</p>
+					<p>I am a description! I don't exist for this upcoming event FOR SOME REASON AIUSDHASDJHKASD.</p>
+				</div>
 		</section>
 
 
 
 
 
-
-
-
-
-
-
-
+		<!--Begin Footer-->
 		<div id="footer-content-wrapper">
 			<div id="footer-content">
 			</div>
@@ -265,12 +238,13 @@
 		</div>
 	</body>
 	
+	<!-- Script necessary for Master Slider-->
 	<script type="text/javascript">		
 		var slider = new MasterSlider();
 		slider.setup('masterslider' , {
 			loop:true,
-			width:240,
-			height:240,
+			width:300,
+			height:300,
 			speed:20,
 			view:'focus',
 			preload:'all',

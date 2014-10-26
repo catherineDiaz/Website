@@ -81,7 +81,7 @@ body a:hover{
 	color: #cfb87b;
 }
 
-.dark a:hover{
+.colored a:hover{
 	color: white;
 }
 
@@ -703,7 +703,6 @@ a.button:hover, a.button:focus {
 #about-div{
 	width: 70%;
 	margin: 0 auto;
-	padding-bottom: 250px;
 }
 
 .about-text{
