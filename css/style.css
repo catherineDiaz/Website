@@ -20,10 +20,16 @@ h1 a:link, h1 a:visited {
 
 .title { 
 	text-align: center;
+	font-size: 2em;
 }
 
 .colored { 
 	background-color: #cfb87b;
+}
+
+.center{
+	text-align: center;
+	margin: 0 auto;
 }
 
 
@@ -700,8 +706,9 @@ a.button:hover, a.button:focus {
 	padding-bottom: 250px;
 }
 
-.left-align-text{
+.about-text{
 	text-align: left;
+	font-size: 1.3em;
 }
 
 .image-padding{
