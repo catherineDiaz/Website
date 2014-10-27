@@ -44,7 +44,7 @@ h1 a:link, h1 a:visited {
 
 .block-iframe{
 	position: relative;
-	margin: 0 0 50px 50px;
+	margin: 0 0 25px 25px;
 	display: inline-block;
 	width: 600px;
 	height: 400px;
@@ -588,71 +588,6 @@ a.button:hover, a.button:focus {
 	background-color:#c7531c;	
 }
 
-/* CONTENT BOX */
-
-.content-box {
-	background-color:#F3F3F3;
-	padding:5px;
-	border:1px solid #DDD;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	background-repeat:no-repeat; 
-	background-position:10px 45%;
-}
-.alert {
-	background-image:url(../images/icons/alert.png);	
-	padding-left:45px;
-}
-.note {
-	background-image:url(../images/icons/note.png);
-	padding-left:45px;
-}
-.download {
-	background-image:url(../images/icons/download.png);
-	padding-left:45px;
-}
-.check {
-	background-image:url(../images/icons/check.png);
-	padding-left:45px;
-}
-.info {
-	background-image:url(../images/icons/info.png);
-	padding-left:45px;
-}
-
-/* CONTENT SIDEBAR */
-
-.content-sidebar {
-	width: 200px;
-	float:right;
-	border-left:1px solid #bbb;
-	margin:0 0 10px 20px;
-	font-size:115%;
-}
-.content-sidebar .padding {
-	padding:10px 20px;	
-}
-/* SIDEBAR WIDGETS */
-
-
-.sidebar-widget img {
-	float:left;
-	margin:0 10px 5px 0;
-	
-}
-
-/* EVENTS CALENDAR */
-
-.event {
-	margin:5px 0;	
-}
-.event .date-time {
-	font-size:85%;
-}
-
-
-
 /* CAPTIONS */
 
 .caption {
@@ -704,7 +639,7 @@ a.button:hover, a.button:focus {
 }
 
 .about-text{
-	text-align: left;
+	text-align: center;
 	font-size: 1.3em;
 }
 
@@ -734,7 +669,4 @@ a.button:hover, a.button:focus {
 	width: 100%;
 	display: none;
 	position: absolute;
-}
-.staff-decription{
-	width: 200%;
 }

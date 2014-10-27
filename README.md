@@ -6,7 +6,7 @@
 
 ###Adding Events to Events Page
 
-To manually add an event to the *events.html* page, add the following code to it's corresponding section (either upcoming or past events). The code is the same for both sections. This way, you can simply cut the event information from Upcoming Events to Past Events.
+To manually add an event to the *events.php* page, add the following code to it's corresponding section (either upcoming or past events). The code is the same for both sections. This way, you can simply cut the event information from Upcoming Events to Past Events.
 
 ```HTML
 <div class="new-event">
@@ -36,7 +36,7 @@ The banner image is determined within the style.css file. It is a background ima
 
 ###Adding Officers
 
-The officer slider follows the following format. To add a new officer, copy the entire section of code and replace the correct information:
+The officer slider follows the following format. To add a new officer, copy the entire section of code and replace the correct information on *index.php*:
 
 ```HTML
 <span><img src="images/officers/brooke.jpg" alt="image02">
@@ -48,6 +48,10 @@ The officer slider follows the following format. To add a new officer, copy the 
 	</div> 
 </span>
 ```
+
+###Updating the Header and Footer
+
+All three pages of the website (*index.php*, *events.php*, and *scholarships.php*) reference the same header and footer files. If you wish to make a change to these files, or change the overall layout to the website, then you must edit *layout/header.php* and *layout/footer.php*, respectively. If you make a change in one of these files, it will change on every page of the website.
 
 ##Additional Notes
 
