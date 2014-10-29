@@ -38,7 +38,7 @@ The banner image is determined within the style.css file. It is a background ima
 
 The officer slider follows the following format. To add a new officer, copy the entire section of code and replace the correct information on *index.php*:
 
-Note: the officer image sizes are currently 300x300px.
+Note: the officer image sizes are currently 300x300px. Descriptions should be less than 370 characters long.
 
 ```HTML
 <span><img src="images/officers/brooke.jpg" alt="image02">
@@ -54,6 +54,8 @@ Note: the officer image sizes are currently 300x300px.
 ###Updating the Header and Footer
 
 All three pages of the website (*index.php*, *events.php*, and *scholarships.php*) reference the same header and footer files. If you wish to make a change to these files, or change the overall layout to the website, then you must edit *layout/header.php* and *layout/footer.php*, respectively. If you make a change in one of these files, it will change on every page of the website.
+
+Information that may need to be updated: Link order/adding pages, the group e-mail, phone number, and address, sponsors images, etc.
 
 ##Additional Notes
 

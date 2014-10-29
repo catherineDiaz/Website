@@ -13,7 +13,7 @@
 			</div>
 			<div id="footer">
 				<div id="site-footer">
-					<a href="SITE URL">
+					<a href="/">
 						<strong>
 							CU Women in Computing</strong>
 					</a>
@@ -31,17 +31,17 @@
 					</div>
 				</div>
 				<div id="cu-footer">
-					<a href="http://www.colorado.edu">
+					<a href="http://www.colorado.edu" target="_blank">
 						<strong>
 							University of Colorado Boulder</strong></a>
 					<br />
 					&copy; Regents of the University of Colorado
 					<br />
-					<a href="http://www.colorado.edu/about/legal.html">
+					<a href="http://www.colorado.edu/about/legal.html" target="_blank">
 						Legal &amp; Trademarks
 					</a>
 					&bull; 
-					<a href="http://www.colorado.edu/privacy">
+					<a href="http://www.colorado.edu/privacy" target="_blank">
 						Privacy
 					</a>
 				</div>
