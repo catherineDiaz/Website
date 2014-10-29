@@ -38,6 +38,8 @@ The banner image is determined within the style.css file. It is a background ima
 
 The officer slider follows the following format. To add a new officer, copy the entire section of code and replace the correct information on *index.php*:
 
+Note: the officer image sizes are currently 300x300px.
+
 ```HTML
 <span><img src="images/officers/brooke.jpg" alt="image02">
 	<div class="staff-info">
