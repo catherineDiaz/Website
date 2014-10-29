@@ -123,16 +123,16 @@
 									Home</a>
 							</li>
 							<li>
-								<a href="events.php">
-									Events</a>
-							</li>
-							<li>
 								<a href="index.php#section2">
 									About</a>
 							</li>
 							<li>
 								<a href="index.php#section3">
 									Officers</a>
+							</li>
+							<li>
+								<a href="events.php">
+									Events</a>
 							</li>
 							<li>
 								<a href="scholarships.php">
