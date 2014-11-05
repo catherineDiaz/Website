@@ -1,5 +1,5 @@
 # Women in Computing Website
-### Last Edit: 10/26/2014
+### Last Edit: 11/5/2014
 ##### Originally Created By: Ashley Herbertson and Andrea Sassu
 
 ##Guide to Updating
@@ -62,3 +62,7 @@ Information that may need to be updated: Link order/adding pages, the group e-ma
 ###Google Calendar & Facebook Plugins on Main Page
 
 The Events section on the main page is solely made up of the iframe plugins designed by Google and Facebook, respectively. Some browsers allow for plugins that will automatically block iframes from loading, leaving a blank square. This may also happen if the plugin is down on the host website. There is no way around this, but it's something to be aware of.
+
+###Changing the Subscription Form to Auto-Send the Email
+
+There exists a commented-out form in the sign-up section of *index.php* that is compatible with the *php/send_form_email.php* file. This was not implemented because auto-sending emails must be allowed in *php.ini*, which is under the jurisdiction of the system administrator. If you would like to enable this functionality, you will have to contact the sysadmin for permission to enable this. In the original development of this website, this was not done simply due to time constraints. Note that this form/php file has not been 100% tested and increased validation steps should be taken in *send_form_email.php*.
