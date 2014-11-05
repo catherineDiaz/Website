@@ -106,7 +106,7 @@
 			<section id="section4" class="colored padded center">
 					<h2 class="title">SIGN UP</h2>
 					<h3>Receive updates on our future events and meetings!</h3>
-		
+					
 					<form action="MAILTO:listproc@lists.Colorado.EDU" method="post" enctype="text/plain">
 					E-mail:<br>
 					<input type="text" name="mail" size="50"><br>
@@ -115,6 +115,22 @@
 					<input type="submit" value="Sign Up">
 					<input type="reset" value="Reset">
 					</form>
+		
+				<!-- Compatable form with send_form_email.php to auto-send the email to list-proc
+					<form method="post" name="contact_form"
+					action="php/send_form_email.php">
+						First Name:<br>
+						<input type="text" name="first_name"><br>
+						
+						Last Name:<br>
+						<input type="text" name="last_name"><br>
+ 
+						Email Address:<br>
+						<input type="text" name="email"><br><br>
+ 
+						<input type="submit" value="Submit">
+					</form> 
+				-->
 
 			</section>
 			<!-- End Sign Up Section-->
