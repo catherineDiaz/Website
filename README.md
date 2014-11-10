@@ -1,12 +1,12 @@
 # Women in Computing Website
-### Last Edit: 11/5/2014
+### Last Edit: 11/10/2014
 ##### Originally Created By: Ashley Herbertson and Andrea Sassu
 
 ##Guide to Updating
 
 ###Adding Events to Events Page
 
-To manually add an event to the *events.php* page, add the following code to it's corresponding section (either upcoming or past events). The code is the same for both sections. This way, you can simply cut the event information from Upcoming Events to Past Events.
+To manually add an event to the *events.html* page, add the following code to it's corresponding section (either upcoming or past events). The code is the same for both sections. This way, you can simply cut the event information from Upcoming Events to Past Events.
 
 ```HTML
 <div class="new-event">
@@ -36,12 +36,12 @@ The banner image is determined within the style.css file. It is a background ima
 
 ###Adding Officers
 
-The officer slider follows the following format. To add a new officer, copy the entire section of code and replace the correct information on *index.php*:
+The officer slider follows the following format. To add a new officer, copy the entire section of code and replace the correct information on *index.html*:
 
 Note: the officer image sizes are currently 300x300px. Descriptions should be less than 370 characters long.
 
 ```HTML
-<span><img src="images/officers/brooke.jpg" alt="image02">
+<span><img src="images/officers/NAME.jpg" alt="image02">
 	<div class="staff-info">
 		<h3>FIRSTNAME LASTNAME</h3>
 		<h4>ROLE</h4>
@@ -51,18 +51,9 @@ Note: the officer image sizes are currently 300x300px. Descriptions should be le
 </span>
 ```
 
-###Updating the Header and Footer
-
-All three pages of the website (*index.php*, *events.php*, and *scholarships.php*) reference the same header and footer files. If you wish to make a change to these files, or change the overall layout to the website, then you must edit *layout/header.php* and *layout/footer.php*, respectively. If you make a change in one of these files, it will change on every page of the website.
-
-Information that may need to be updated: Link order/adding pages, the group e-mail, phone number, and address, sponsors images, etc.
 
 ##Additional Notes
 
 ###Google Calendar & Facebook Plugins on Main Page
 
 The Events section on the main page is solely made up of the iframe plugins designed by Google and Facebook, respectively. Some browsers allow for plugins that will automatically block iframes from loading, leaving a blank square. This may also happen if the plugin is down on the host website. There is no way around this, but it's something to be aware of.
-
-###Changing the Subscription Form to Auto-Send the Email
-
-There exists a commented-out form in the sign-up section of *index.php* that is compatible with the *php/send_form_email.php* file. This was not implemented because auto-sending emails must be allowed in *php.ini*, which is under the jurisdiction of the system administrator. If you would like to enable this functionality, you will have to contact the sysadmin for permission to enable this. In the original development of this website, this was not done simply due to time constraints. Note that this form/php file has not been 100% tested and increased validation steps should be taken in *send_form_email.php*.
