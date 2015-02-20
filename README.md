@@ -2,6 +2,16 @@
 ### Last Edit: 11/10/2014
 ##### Originally Created By: Ashley Herbertson and Andrea Sassu
 
+##How to Publish
+Make a local repo:
+	git clone https://github.com/CUWiC/Website.git
+
+Pushing to Github and Publishing on cuwic.github.io/Website:
+	git add -A
+	git commit -m "Change Description" 
+	git push origin master
+	git push origin gh-pages
+
 ##Guide to Updating
 
 ###Adding Events to Events Page

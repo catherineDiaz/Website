@@ -36,7 +36,7 @@ h1 a:link, h1 a:visited {
 #main-image{
 	width: 100%;
 	height: 300px;
-	background: url(/images/engineering-center2.jpg); 
+	background: url(../images/engineering-center2.jpg); 
 	background-position: 50% 50%;
 	background-size: cover;
 
