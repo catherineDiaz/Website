@@ -1,5 +1,5 @@
 # Women in Computing Website
-### Last Edit: 11/10/2014
+### Last Edit: 02/19/2015
 ##### Originally Created By: Ashley Herbertson and Andrea Sassu
 
 ##How to Publish
@@ -8,9 +8,12 @@ Make a local repo:
 
 Pushing to Github and Publishing on cuwic.github.io/Website:
 	git add -A
-	git commit -m "Change Description" 
+	git commit -m "Commit message"
 	git push origin master
+	git checkout gh-pages
+	git rebase master
 	git push origin gh-pages
+	git checkout master
 
 ##Guide to Updating
 
