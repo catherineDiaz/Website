@@ -4,9 +4,12 @@
 
 ##How to Publish
 Make a local repo:
+```
     git clone https://github.com/CUWiC/Website.git
+```
 
 Pushing to Github and Publishing on cuwic.github.io/Website:
+```
     git add -A
     git commit -m "Commit message"
     git push origin master
@@ -14,6 +17,7 @@ Pushing to Github and Publishing on cuwic.github.io/Website:
     git rebase master
     git push origin gh-pages
     git checkout master
+```
 
 ##Guide to Updating
 
