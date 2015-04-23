@@ -615,6 +615,7 @@ a.button:hover, a.button:focus {
 /* SPONSORS */
 #sponsors{
 	text-align: center;
+        background-color: white;
 }
 
 #sponsors-list li{
